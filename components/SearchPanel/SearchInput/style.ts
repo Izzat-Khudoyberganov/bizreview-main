@@ -28,4 +28,8 @@ export const Input = styled.input`
 export const SearchIcon = styled(Search)`
   width: 20px;
   height: 50px;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 `

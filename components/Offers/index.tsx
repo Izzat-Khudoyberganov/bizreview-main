@@ -28,8 +28,6 @@ import "swiper/css/pagination"
 import "swiper/css/navigation"
 
 const Offers: FC = () => {
-  const swiper = useSwiper()
-
   const useSwiperRef = <T extends HTMLElement>(): [T | null, React.Ref<T>] => {
     const [wrapper, setWrapper] = useState<T | null>(null)
     const ref = useRef<T>(null)
@@ -72,9 +70,9 @@ const Offers: FC = () => {
               width: 640,
               slidesPerView: 1,
             },
-            768: {
-              width: 768,
-              slidesPerView: 3,
+            850: {
+              width: 850,
+              slidesPerView: 1,
             },
           }}
           className='mySwiper'

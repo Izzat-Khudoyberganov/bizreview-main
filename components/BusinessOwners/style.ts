@@ -6,4 +6,9 @@ export const BusinessOwnersWraper = styled.section`
   align-items: center;
   justify-content: space-between;
   padding: 130px 0;
+
+  @media (max-width: 933px) {
+    flex-direction: column;
+    column-gap: 20px;
+  }
 `

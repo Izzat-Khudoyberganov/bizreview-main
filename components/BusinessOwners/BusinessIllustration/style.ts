@@ -30,6 +30,15 @@ export const Review = styled.div`
   justify-content: center;
   padding: 20px 35px;
   text-align: center;
+
+  @media (max-width: 620px) {
+    margin-top: 100%;
+    margin-left: 100px;
+  }
+
+  @media (max-width: 400px) {
+    margin-left: 0;
+  }
 `
 export const ReviewTitle = styled.h3`
   color: #394457;

@@ -7,8 +7,17 @@ export const EmailFormWraper = styled.div`
   margin-top: 90px;
   box-shadow: #e3ecf0 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -15px;
-  width: 490px;
+  max-width: 490px;
+  width: 100%;
   height: 100px;
+
+  @media (max-width: 933px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    height: 100%;
+  }
 `
 
 export const EmailFormInput = styled.input`
@@ -21,6 +30,11 @@ export const EmailFormInput = styled.input`
   &:focus {
     outline: none;
   }
+
+  @media (max-width: 933px) {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
 `
 export const EmailFormButton = styled.button`
   width: 30%;
@@ -32,4 +46,11 @@ export const EmailFormButton = styled.button`
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
+
+  @media (max-width: 933px) {
+    width: 100%;
+    padding: 15px auto;
+    margin-top: 30px;
+    margin-top: 0;
+  }
 `

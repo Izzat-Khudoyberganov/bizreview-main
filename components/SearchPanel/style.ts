@@ -15,7 +15,8 @@ export const SearchPanelContent = styled.div`
   padding-left: 30px;
 
   @media (max-width: 933px) {
-    width: calc(80% - 30px);
+    /* width: calc(100% - 30px); */
+    width: 100%;
     height: 100%;
     padding: 30px 15px;
     flex-direction: column;
