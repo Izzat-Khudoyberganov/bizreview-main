@@ -1,8 +1,7 @@
 import styled from "styled-components"
 
 export const SearchPanelContent = styled.div`
-  max-width: 850px;
-  width: 100%;
+  width: 850px;
   height: 100px;
   background-color: white;
   margin: 0 auto;
@@ -14,4 +13,13 @@ export const SearchPanelContent = styled.div`
   gap: 20px;
   align-items: center;
   padding-left: 30px;
+
+  @media (max-width: 933px) {
+    width: calc(80% - 30px);
+    height: 100%;
+    padding: 30px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `

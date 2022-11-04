@@ -19,12 +19,12 @@ const Home: NextPage = () => {
       </Head>
       <Banner />
       <MobileNavbar />
-      {/* <SearchPanel />
+      <SearchPanel />
       <PopularServices />
-      <BusinessOwners />
+      {/* <BusinessOwners />
       <Offers />
       <PopularBusiness />
-      <Customers />
+      <Customers />  
       <Footer /> */}
     </>
   )

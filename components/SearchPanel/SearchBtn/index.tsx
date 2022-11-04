@@ -10,6 +10,10 @@ const Button = styled.button`
   width: 260px;
   height: 100px;
   display: block;
+
+  @media (max-width: 933px) {
+    height: 75px;
+  }
 `
 const SearchBtn = () => {
   let router = useRouter()

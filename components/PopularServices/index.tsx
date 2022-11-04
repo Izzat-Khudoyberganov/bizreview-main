@@ -60,13 +60,17 @@ const PopularServices: FC = () => {
           nextEl,
         }}
         breakpoints={{
+          320: {
+            width: 320,
+            slidesPerView: 1,
+          },
           640: {
             width: 640,
-            slidesPerView: 1,
+            slidesPerView: 3,
           },
           768: {
             width: 768,
-            slidesPerView: 3,
+            slidesPerView: 4,
           },
         }}
         className='mySwiper'

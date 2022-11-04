@@ -8,6 +8,7 @@ export const MobileNavWraper = styled.div`
   padding: 20px;
   width: 100%;
   position: fixed;
+  z-index: 999;
   bottom: 0;
   left: 0;
   right: 0;

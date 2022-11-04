@@ -14,6 +14,10 @@ export const SwiperNavigation = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
 `
 
 export const SwiperCards = styled(SwiperSlide)`

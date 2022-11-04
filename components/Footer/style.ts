@@ -2,6 +2,7 @@ import Link from "next/link"
 import styled from "styled-components"
 
 export const FooterWraper = styled.section`
+  margin-top: 100px;
   background-color: #fff;
   padding: 100px 0;
 `
