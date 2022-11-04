@@ -1,4 +1,5 @@
-import Link from "next/link"
+import { User } from "@styled-icons/evil"
+import { Login } from "@styled-icons/material"
 import styled from "styled-components"
 
 export const MobileNavWraper = styled.div`
@@ -22,6 +23,11 @@ export const MobileNavButton = styled.button`
   background-color: transparent;
   font-size: 1rem;
   padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
 
   @media (max-width: 600px) {
     font-size: 0.8rem;
@@ -30,6 +36,20 @@ export const MobileNavButton = styled.button`
   @media (max-width: 400px) {
     font-size: 0.6rem;
   }
+`
+
+export const UserIcon = styled(User)`
+  width: 30px;
+  height: 30px;
+`
+
+console.log(UserIcon)
+
+export const NavbarLinkIcons = styled.div`
+  width: 30px;
+`
+export const LoginIcon = styled(Login)`
+  width: 30px;
 `
 export const MobileNavLinks = styled.a`
   font-size: 1rem;

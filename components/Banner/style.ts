@@ -1,6 +1,8 @@
 import styled from "styled-components"
+import mobile from "../../img/mobile-banner-img.png"
 interface Props {
   image: any
+  mobile: any
 }
 export const BannerWraper = styled.section<Props>`
   background-image: url(${(props) => props.image.src});
@@ -18,6 +20,6 @@ export const BannerWraper = styled.section<Props>`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #444a53;
+    background-image: url(${(props) => props.mobile.src});
   }
 `

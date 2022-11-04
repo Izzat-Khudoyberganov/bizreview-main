@@ -15,6 +15,9 @@ export const ContentWraper = styled.div`
     column-gap: 20px;
     margin: auto 0;
   }
+  @media (max-width: 500px) {
+    margin-top: 230px;
+  }
 `
 
 export const ContentTitle = styled.h1`
@@ -34,10 +37,15 @@ export const ContentTitle = styled.h1`
     margin-left: 0;
     text-align: center;
   }
+  @media (max-width: 500px) {
+    font-size: 1.8rem;
+    text-align: left;
+    widht: 100%;
+  }
 `
 export const ContentSubtitle = styled.p`
   font-size: 1rem;
-  text-align: left;
+  text-align: justify;
   margin-left: 30px;
   max-width: 350px;
   width: 100%;
@@ -45,7 +53,7 @@ export const ContentSubtitle = styled.p`
 
   @media (max-width: 768px) {
     margin-left: 0;
-    text-align: center;
+    text-align: left;
   }
 `
 export const ArrowDownIcon = styled(ArrowDown)`
@@ -55,7 +63,6 @@ export const ArrowDownIcon = styled(ArrowDown)`
   color: #fff;
 
   @media (max-width: 768px) {
-    margin-top: 20px;
-    margin-left: 0;
+    display: none;
   }
 `
