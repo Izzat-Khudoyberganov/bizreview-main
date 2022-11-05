@@ -7,6 +7,10 @@ export const ServiceWraper = styled.div`
   align-items: center;
   margin-top: 150px;
   justify-content: space-between;
+
+  @media (max-width: 933px) {
+    margin-top: 75px;
+  }
 `
 
 export const SwiperNavigation = styled.div`

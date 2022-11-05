@@ -58,26 +58,27 @@ const Offers: FC = () => {
         </Content>
         <Swiper
           modules={[FreeMode, Pagination, Navigation]}
-          slidesPerView={1}
+          slidesPerView={3}
           spaceBetween={30}
           freeMode={true}
           navigation={{
             prevEl,
             nextEl,
           }}
-          breakpoints={{
-            640: {
-              width: 640,
-              slidesPerView: 1,
-            },
-            850: {
-              width: 850,
-              slidesPerView: 1,
-            },
-          }}
+          // breakpoints={{
+          //   640: {
+          //     width: 640,
+          //     slidesPerView: 1,
+          //   },
+          //   850: {
+          //     width: 850,
+          //     slidesPerView: 1,
+          //   },
+          // }}
           className='mySwiper'
           style={{
             marginTop: 50,
+            minWidth: 850,
           }}
         >
           {slides.map(

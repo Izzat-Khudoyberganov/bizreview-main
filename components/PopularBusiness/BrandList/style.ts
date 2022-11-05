@@ -14,6 +14,7 @@ export const BrandBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 `
 
 export const BrandBoxImage = styled(Image)`

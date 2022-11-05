@@ -22,10 +22,10 @@ const Home: NextPage = () => {
       <SearchPanel />
       <PopularServices />
       <BusinessOwners />
-      {/* <Offers />
+      <Offers />
       <PopularBusiness />
       <Customers />
-      <Footer /> */}
+      <Footer />
     </>
   )
 }

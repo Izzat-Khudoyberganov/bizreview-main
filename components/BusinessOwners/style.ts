@@ -8,7 +8,8 @@ export const BusinessOwnersWraper = styled.section`
   padding: 130px 0;
 
   @media (max-width: 933px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     column-gap: 20px;
+    padding: 0 0 30px;
   }
 `

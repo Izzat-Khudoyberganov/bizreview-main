@@ -1,7 +1,6 @@
 import Image, { StaticImageData } from "next/image"
 import React, { FC } from "react"
 import styled from "styled-components"
-import img from "../../../img/operator.png"
 import roofing from "../../../img/roofing.jpg"
 import electrican from "../../../img/electrican-services.jpg"
 import phone from "../../../img/phone-repair.jpg"

@@ -70,7 +70,7 @@ const PopularServices: FC = () => {
           },
           768: {
             width: 768,
-            slidesPerView: 4,
+            slidesPerView: 3,
           },
         }}
         className='mySwiper'

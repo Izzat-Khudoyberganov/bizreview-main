@@ -14,7 +14,8 @@ export const Searchwraper = styled.div`
 `
 
 export const Input = styled.input`
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   display: block;
   height: 50px;
   outline: none;

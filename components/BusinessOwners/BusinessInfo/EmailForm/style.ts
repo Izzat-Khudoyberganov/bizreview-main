@@ -17,6 +17,7 @@ export const EmailFormWraper = styled.div`
     justify-content: center;
     column-gap: 20px;
     height: 100%;
+    margin-top: 30px;
   }
 `
 
