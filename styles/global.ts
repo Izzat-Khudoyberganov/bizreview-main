@@ -18,33 +18,7 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: #000;
   }
-.container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: 300px;
-  margin-top: 50px;
-  word-break: break-all;
-  background-color: #fff;
-}
-.bloc-tabs {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
 
-.block-tabs-link {
-  color: #8FD7FE;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.block-tabs-btn-group{
-  width: 65%;
-  display: flex;
-}
 .tabs {
   padding: 15px;
   text-align: center;
@@ -54,11 +28,17 @@ export const GlobalStyles = createGlobalStyle`
   position: relative;
   outline: none;
   background: #fff;
+
+  @media(max-width: 850px){
+    padding: 10px;
+  }
 }
 
 .active-tabs  {
   background: white;
   border-bottom: 1px solid transparent;
+
+  
 }
 
 .active-tabs::before {
@@ -69,6 +49,10 @@ export const GlobalStyles = createGlobalStyle`
   width: 100%;
   height: 2px;
   background: #FFD600;
+
+  @media(max-width: 850px){
+    width: 80%;
+  }
 }
 
 button {

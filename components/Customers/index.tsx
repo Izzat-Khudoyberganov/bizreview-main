@@ -6,6 +6,7 @@ import Title from "../Title"
 import Cards from "./Cards"
 import img from "../../img/user.webp"
 import {
+  CustomersBlock,
   CustomersWraper,
   WrapperBlockOne,
   WrapperBlockTwo,
@@ -20,7 +21,7 @@ export const Customers: FC = () => {
   return (
     <CustomersWraper>
       <Container>
-        <div style={{ display: "flex" }}>
+        <CustomersBlock>
           <WrapperBlockOne>
             <Title title={t.customers} />
             <Cards
@@ -51,7 +52,7 @@ export const Customers: FC = () => {
             />
             <WrapperLink>{t.reviews}</WrapperLink>
           </WrapperBlockTwo>
-        </div>
+        </CustomersBlock>
       </Container>
     </CustomersWraper>
   )

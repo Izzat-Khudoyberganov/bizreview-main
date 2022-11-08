@@ -6,12 +6,14 @@ interface Props {
 }
 
 export const OffersWraper = styled.div`
+  width: 100%;
   padding: 100px 0;
   background-color: #f5fafd;
 `
 
 export const OffersContainer = styled.div`
-  width: 850px;
+  max-width: 850px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 `
@@ -53,4 +55,56 @@ export const SwiperText = styled.small`
   font-size: 0.8rem;
   color: #f1f1f1;
   font-weight: 600;
+`
+export const SwiperNavigation = styled.div`
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 860px) {
+    display: none;
+  }
+`
+
+export const SwiperCards = styled(SwiperSlide)`
+  margin: 10px;
+  width: 250px;
+  height: 220px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 120px;
+  align-items: flex-start;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.4s ease;
+  &:hover {
+    background-color: #ffd600;
+    cursor: pointer;
+  }
+`
+
+export const ButtonNext = styled.button`
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #000;
+  border: 1px solid #dbe4ea;
+`
+
+export const ButtonPrev = styled.button`
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #000;
+  border: 1px solid #dbe4ea;
 `

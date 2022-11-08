@@ -2,6 +2,7 @@ import { SetStateAction, useState } from "react"
 import { useRouter } from "next/router"
 import { en, ru } from "../../../utils/translations"
 import TabOne from "./TabOne"
+import { BlockTabs, BlockWraper, BtnGroup, TabsLink } from "./style"
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1)
@@ -14,9 +15,9 @@ function Tabs() {
   }
 
   return (
-    <div className='container'>
-      <div className='bloc-tabs'>
-        <div className='block-tabs-btn-group'>
+    <BlockWraper>
+      <BlockTabs>
+        <BtnGroup>
           <button
             className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
             onClick={() => toggleTab(1)}
@@ -47,11 +48,9 @@ function Tabs() {
           >
             Auto Repair
           </button>
-        </div>
-        <p className='block-tabs-link' style={{ color: "#22B0FC" }}>
-          {t.seeMore}
-        </p>
-      </div>
+        </BtnGroup>
+        <TabsLink>{t.seeMore}</TabsLink>
+      </BlockTabs>
 
       <div className='content-tabs'>
         <div
@@ -106,7 +105,7 @@ function Tabs() {
           </p>
         </div>
       </div>
-    </div>
+    </BlockWraper>
   )
 }
 export default Tabs

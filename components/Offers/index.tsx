@@ -5,11 +5,7 @@ import { FreeMode, Navigation, Pagination } from "swiper"
 import { StaticImageData } from "next/image"
 import { useSwiper } from "swiper/react"
 import { en, ru } from "../../utils/translations"
-import {
-  ButtonNext,
-  ButtonPrev,
-  SwiperNavigation,
-} from "../PopularServices/style"
+import { ButtonNext, ButtonPrev, SwiperNavigation } from "./style"
 import { slides } from "./data"
 import Title from "../Title"
 import {
@@ -65,20 +61,19 @@ const Offers: FC = () => {
             prevEl,
             nextEl,
           }}
-          // breakpoints={{
-          //   640: {
-          //     width: 640,
-          //     slidesPerView: 1,
-          //   },
-          //   850: {
-          //     width: 850,
-          //     slidesPerView: 1,
-          //   },
-          // }}
+          breakpoints={{
+            640: {
+              width: 640,
+              slidesPerView: 1,
+            },
+            850: {
+              width: 850,
+              slidesPerView: 1,
+            },
+          }}
           className='mySwiper'
           style={{
             marginTop: 50,
-            minWidth: 850,
           }}
         >
           {slides.map(

@@ -14,10 +14,20 @@ export const BrandBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 `
 
 export const BrandBoxImage = styled(Image)`
   width: 150px;
   height: 80px;
+
+  @media (max-width: 600px) {
+    width: 100px;
+    height: 40px;
+  }
 `
