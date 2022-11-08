@@ -45,7 +45,7 @@ export const EmailFormButton = styled.button`
   text-transform: uppercase;
   background: #00a6ff;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
 
   @media (max-width: 933px) {

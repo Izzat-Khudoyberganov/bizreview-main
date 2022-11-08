@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const CustomersBlock = styled.div`
   display: flex;
+  justify-content: space-between;
 
   @media (max-width: 830px) {
     flex-direction: column;
@@ -13,6 +14,7 @@ export const CustomersBlock = styled.div`
 export const CustomersWraper = styled.section`
   padding: 100px 0;
   background-color: #f5fafd;
+  width: 100%;
 
   @media (max-width: 830px) {
     padding: 50px 0;
@@ -35,10 +37,15 @@ export const WrapperBlockTwo = styled.div`
   grid-row-gap: 30px;
   padding-top: 100px;
   grid-auto-rows: auto 1fr auto;
+  width: 440px;
 
   @media (max-width: 830px) {
+    width: 100%;
     padding-top: 0;
-    grid-auto-rows: auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 30px;
   }
 `

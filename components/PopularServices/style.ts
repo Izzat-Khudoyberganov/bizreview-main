@@ -2,10 +2,14 @@ import styled from "styled-components"
 import { NavigateNext } from "@styled-icons/material"
 import { SwiperSlide } from "swiper/react"
 
+export const PopularServicesWraper = styled.div`
+  width: 100%;
+  background-color: #f5fafd;
+  padding: 50px 0;
+`
 export const ServiceWraper = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 150px;
   justify-content: space-between;
 
   @media (max-width: 933px) {

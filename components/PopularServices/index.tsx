@@ -10,6 +10,7 @@ import Title from "../Title"
 import {
   ButtonNext,
   ButtonPrev,
+  PopularServicesWraper,
   ServiceWraper,
   SwiperCards,
   SwiperNavigation,
@@ -40,7 +41,7 @@ const PopularServices: FC = () => {
   const [nextEl, nextElRef] = useSwiperRef<HTMLButtonElement>()
   const [prevEl, prevElRef] = useSwiperRef<HTMLButtonElement>()
   return (
-    <>
+    <PopularServicesWraper>
       <Container>
         <ServiceWraper>
           <Title title={t.popularServiceTitle} />
@@ -90,7 +91,7 @@ const PopularServices: FC = () => {
           </SwiperCards>
         ))}
       </Swiper>
-    </>
+    </PopularServicesWraper>
   )
 }
 export default PopularServices

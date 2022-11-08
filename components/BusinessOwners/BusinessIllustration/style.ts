@@ -4,12 +4,19 @@ import styled from "styled-components"
 interface Props {
   image: any
 }
+export const IllustrationWraper = styled.div`
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+`
 
 export const Illustration = styled.div<Props>`
   background-image: url(${(props) => props.image.src});
   background-size: cover;
   background-repeat: no-repeat;
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
   height: 458px;
   position: relative;
 `
@@ -20,7 +27,7 @@ export const Review = styled.div`
   background-color: #fff;
   color: #000;
   margin-top: 70%;
-  margin-left: 150px;
+  margin-left: 120px;
   padding: 35px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px;
   position: relative;

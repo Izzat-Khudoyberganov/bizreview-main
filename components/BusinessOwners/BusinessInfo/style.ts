@@ -1,13 +1,13 @@
 import styled from "styled-components"
 
 export const BusinessInfoWraper = styled.div`
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
-  margin-left: 120px;
+  margin-left: 60px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px;
+  padding: 0 20px;
 
   @media (max-width: 933px) {
     align-self: center;
