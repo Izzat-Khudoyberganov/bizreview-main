@@ -52,6 +52,5 @@ export const EmailFormButton = styled.button`
     width: 100%;
     padding: 15px auto;
     margin-top: 30px;
-    margin-top: 0;
   }
 `

@@ -23,9 +23,9 @@ const Home: NextPage = () => {
       <PopularServices />
       <BusinessOwners />
       <Offers />
-      {/* <PopularBusiness /> */}
+      <PopularBusiness />
       <Customers />
-      {/* <Footer />  */}
+      <Footer /> 
     </>
   )
 }

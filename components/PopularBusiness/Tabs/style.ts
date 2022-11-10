@@ -7,15 +7,16 @@ export const BlockWraper = styled.div`
   width: 100%;
   height: 300px;
   margin-top: 50px;
-  word-break: break-all;
   background-color: #fff;
 `
 export const BtnGroup = styled.div`
   width: 65%;
   display: flex;
+  justify-content: space-between;
 
   @media (max-width: 850px) {
     width: 100%;
+    overflow-x: auto;
   }
 `
 export const BlockTabs = styled.div`
