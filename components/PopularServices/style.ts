@@ -6,6 +6,10 @@ export const PopularServicesWraper = styled.div`
   width: 100%;
   background-color: #f5fafd;
   padding: 50px 0;
+
+  @media(max-width: 640px) {
+    padding: 0;
+  }
 `
 export const ServiceWraper = styled.div`
   display: flex;

@@ -8,10 +8,12 @@ import { ContentItem } from "./type"
 
 export const Content = ({ title, subtitle }: ContentItem) => {
   return (
-    <ContentWraper>
-      <ContentTitle>{title}</ContentTitle>
-      <ContentSubtitle>{subtitle}</ContentSubtitle>
-      <ArrowDownIcon />
-    </ContentWraper>
+    <>
+      <ContentWraper>
+        <ContentTitle>{title}</ContentTitle>
+        <ContentSubtitle>{subtitle}</ContentSubtitle>
+        <ArrowDownIcon />
+      </ContentWraper>
+    </>
   )
 }

@@ -18,6 +18,14 @@ export const EmailFormWraper = styled.div`
     column-gap: 20px;
     height: 100%;
     margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media(max-width: 600px) {
+    column-gap: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
   }
 `
 
@@ -36,6 +44,10 @@ export const EmailFormInput = styled.input`
     width: calc(100% - 30px);
     margin: 0 15px;
   }
+
+  @media(max-width: 600px) {
+    margin: 0;
+  }
 `
 export const EmailFormButton = styled.button`
   width: 30%;
@@ -51,6 +63,6 @@ export const EmailFormButton = styled.button`
   @media (max-width: 933px) {
     width: 100%;
     padding: 15px auto;
-    margin-top: 30px;
+    /* margin-top: 30px; */
   }
 `

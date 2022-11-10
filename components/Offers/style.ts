@@ -1,3 +1,4 @@
+import { NavigateNext } from "@styled-icons/material-outlined"
 import styled from "styled-components"
 import { SwiperSlide } from "swiper/react"
 
@@ -9,6 +10,12 @@ export const OffersWraper = styled.div`
   width: 100%;
   padding: 100px 0;
   background-color: #f5fafd;
+`
+
+export const NextIcon = styled(NavigateNext)`
+  width: 20px;
+  height: 20px;
+  color: red;
 `
 
 export const OffersContainer = styled.div`

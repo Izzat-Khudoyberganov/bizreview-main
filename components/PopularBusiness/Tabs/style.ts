@@ -5,7 +5,6 @@ export const BlockWraper = styled.div`
   flex-direction: column;
   position: relative;
   width: 100%;
-  height: 300px;
   margin-top: 50px;
   background-color: #fff;
 `
@@ -13,10 +12,14 @@ export const BtnGroup = styled.div`
   width: 65%;
   display: flex;
   justify-content: space-between;
-
+  
   @media (max-width: 850px) {
     width: 100%;
     overflow-x: auto;
+
+    &::-webkit-scrollbar{
+    display: none;
+  }
   }
 `
 export const BlockTabs = styled.div`

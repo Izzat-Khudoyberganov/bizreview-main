@@ -5,9 +5,21 @@ import roofing from "../../../img/roofing.jpg"
 import electrican from "../../../img/electrican-services.jpg"
 import phone from "../../../img/phone-repair.jpg"
 
+
+const TabsContainer = styled.div`
+  display: flex;
+  gap: 30px;
+
+  @media(max-width: 768px) {
+   flex-wrap:wrap;
+   justify-content: center;
+   align-items: center;
+  }
+
+`
 const TabCard = styled.div`
   width: 255px;
-  height: 305px;
+  /* height: 305px; */
   box-shadow: rgba(219, 203, 203, 0.24) 0px 3px 8px;
   display: flex;
   flex-direction: column;
@@ -17,6 +29,7 @@ const TabCard = styled.div`
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     cursor: pointer;
   }
+
 `
 const TabCardWraper = styled.div`
   display: flex;
@@ -37,7 +50,7 @@ const TabCardTitle = styled.div`
 `
 const TabOne: FC = () => {
   return (
-    <div style={{ display: "flex", gap: "30px" }}>
+    <TabsContainer>
       <TabCard>
         <Image src={roofing} width={255} height={170} layout='responsive' />
         <TabCardWraper>
@@ -65,7 +78,7 @@ const TabOne: FC = () => {
           <TabCardReview>(415) 644-8377</TabCardReview>
         </TabCardWraper>
       </TabCard>
-    </div>
+    </TabsContainer>
   )
 }
 export default TabOne

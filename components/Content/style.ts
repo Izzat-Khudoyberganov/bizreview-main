@@ -2,7 +2,7 @@ import { ArrowDown } from "@styled-icons/bootstrap"
 import styled from "styled-components"
 
 export const ContentWraper = styled.div`
-  max-width: 1120px;
+  max-width: 950px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -16,7 +16,9 @@ export const ContentWraper = styled.div`
     margin: auto 0;
   }
   @media (max-width: 500px) {
+    padding: 0;
     margin-top: 230px;
+    align-items: flex-start;
   }
 `
 
@@ -33,14 +35,16 @@ export const ContentTitle = styled.h1`
   @media (max-width: 768px) {
     font-size: 2.2rem;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     margin-left: 0;
     text-align: center;
   }
   @media (max-width: 500px) {
+    margin-bottom: 10px;
     font-size: 1.8rem;
     text-align: left;
     widht: 100%;
+    padding: 0;
   }
 `
 export const ContentSubtitle = styled.p`
@@ -53,7 +57,13 @@ export const ContentSubtitle = styled.p`
 
   @media (max-width: 768px) {
     margin-left: 0;
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    margin-left: 0;
     text-align: left;
+    width: 100%;
   }
 `
 export const ArrowDownIcon = styled(ArrowDown)`
@@ -66,3 +76,4 @@ export const ArrowDownIcon = styled(ArrowDown)`
     display: none;
   }
 `
+

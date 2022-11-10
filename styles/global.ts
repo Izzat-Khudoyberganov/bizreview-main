@@ -31,6 +31,7 @@ export const GlobalStyles = createGlobalStyle`
 
   @media(max-width: 850px){
     padding: 10px;
+    min-width: 70px;
   }
 }
 
@@ -88,6 +89,8 @@ button {
 
 .active-content {
   display: block;
+
+  
 }
 
 `

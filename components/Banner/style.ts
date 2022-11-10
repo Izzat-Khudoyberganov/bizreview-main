@@ -21,5 +21,10 @@ export const BannerWraper = styled.section<Props>`
     align-items: center;
     justify-content: center;
     background-image: url(${(props) => props.mobile.src});
+
+
+    @media(max-width: 500px) {
+      padding: 50px 25px;
+    }
   }
 `

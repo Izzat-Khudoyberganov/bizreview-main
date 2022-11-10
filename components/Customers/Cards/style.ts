@@ -20,8 +20,10 @@ export const CardWraper = styled.div`
   @media (max-width: 390px) {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
     justify-content: center;
     text-align: center;
+    font-size: 0.8rem;
   }
 `
 

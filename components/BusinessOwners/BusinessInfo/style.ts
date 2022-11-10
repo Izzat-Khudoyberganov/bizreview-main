@@ -13,6 +13,7 @@ export const BusinessInfoWraper = styled.div`
     align-self: center;
     margin-left: 0;
     text-align: center;
+    gap: 20px;
   }
 `
 

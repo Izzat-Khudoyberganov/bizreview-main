@@ -30,7 +30,7 @@ export const Review = styled.div`
   margin-left: 120px;
   padding: 35px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px;
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,6 +44,8 @@ export const Review = styled.div`
   }
 
   @media (max-width: 400px) {
+    bottom: 0;
+    width: 250px;
     margin-left: 0;
   }
 `
