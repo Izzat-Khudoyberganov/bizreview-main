@@ -24,7 +24,7 @@ const LoginPage: FC = (props: Props) => {
           <span>Sign Up</span>
         </SignUpTitle>
         <PrivacyText>
-          By logging in, you agree to BIZREVIEW's Terms of Service and Privacy
+          By logging in, you agree to BIZREVIEWs Terms of Service and Privacy
           Policy.
         </PrivacyText>
         <SignUpButtons/>
