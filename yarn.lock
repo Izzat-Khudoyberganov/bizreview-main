@@ -466,6 +466,14 @@
     "@babel/runtime" "^7.19.0"
     "@styled-icons/styled-icon" "^10.7.0"
 
+"@styled-icons/boxicons-logos@^10.46.0":
+  "integrity" "sha512-+i85m0XqTN1VJPWqQuBgELuh0fljE5vrFtoXSlBNXLuRDSFXg587S+3SzoqgD5q0b/lkP9hNUUTJtKi7zjfOnA=="
+  "resolved" "https://registry.npmjs.org/@styled-icons/boxicons-logos/-/boxicons-logos-10.46.0.tgz"
+  "version" "10.46.0"
+  dependencies:
+    "@babel/runtime" "^7.19.0"
+    "@styled-icons/styled-icon" "^10.7.0"
+
 "@styled-icons/boxicons-regular@^10.46.0":
   "integrity" "sha512-lru8i8Q62gC5UZchdpSC0gJgov7cCU114YBhK8JRdLJ8gQFPJgxOafSnqHtcHf3e4TvuSMcXBH9Z/gOjUzEb7g=="
   "resolved" "https://registry.npmjs.org/@styled-icons/boxicons-regular/-/boxicons-regular-10.46.0.tgz"

@@ -20,6 +20,7 @@ export const en = {
   support: "Our supported source",
   customers: "What our customers are saying...",
   reviews: "See all reviews",
+  signUp: "Sign up"
 }
 export const ru = {
   buttonSecondary: "Присоединись бесплатно",
@@ -43,4 +44,5 @@ export const ru = {
   support: "Наш поддерживаемый источник",
   customers: "Что говорят наши клиенты...",
   reviews: "Посмотреть все отзывы",
+  signUp: "Зарегистрироваться"
 }

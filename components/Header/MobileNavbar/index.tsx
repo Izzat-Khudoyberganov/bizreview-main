@@ -22,11 +22,15 @@ const MobileNavbar: FC = () => {
     <MobileNavWraper>
       <MobileNavButton>
         <LoginIcon />
-        Login
+        <Link href="/login">
+          <a>Login</a>
+        </Link>
       </MobileNavButton>
       <MobileNavButton>
         <UserIcon />
-        Join for free
+        <Link href="/signup">
+          <a>Join for free</a>
+        </Link>
       </MobileNavButton>
       {data.map(
         (el: { link: string; name: string; id: number; icon: any }, i) => (
