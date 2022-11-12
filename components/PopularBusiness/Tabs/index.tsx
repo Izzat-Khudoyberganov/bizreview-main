@@ -80,7 +80,7 @@ function Tabs() {
             nostrum rerum laudantium totam unde adipisci incidunt modi alias!
             Accusamus in quia odit aspernatur provident et ad vel distinctio
             recusandae totam quidem repudiandae omnis veritatis nostrum
-            laboriosam architecto optio rem, dignissimos voluptatum beatae
+            laboriosam architecto optio rem, dignissimos  voluptatum beatae
             aperiam voluptatem atque. Beatae rerum dolores sunt.
           </p>
         </div>
