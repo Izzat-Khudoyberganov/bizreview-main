@@ -15,11 +15,11 @@ const SignUp = (props: Props) => {
         </SignUpTitle>
         <SignUpSubtitle>Connect with great local businesses</SignUpSubtitle>
         <SignUpText>
-          By continuing, you agree to Yelp’s Terms of Service and acknowledge
-          Yelp’s Privacy Policy.
+          By continuing, you agree to bizreviews Terms of Service and acknowledge
+          bizreviews Privacy Policy.
         </SignUpText>
         <SignUpButtons/>
-        <Info>Don't worry, we never post without your permission.</Info>
+        <Info>Do not worry, we never post without your permission.</Info>
         <AlternativeElement>OR</AlternativeElement>
         <FormWraper/>
       </SignUpWraper>
