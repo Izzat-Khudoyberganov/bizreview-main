@@ -63,16 +63,16 @@ const Offers: FC = () => {
             prevEl,
             nextEl,
           }}
-          breakpoints={{
-            640: {
-              width: 640,
-              slidesPerView: 1,
-            },
-            850: {
-              width: 850,
-              slidesPerView: 1,
-            },
-          }}
+          // breakpoints={{
+          //   640: {
+          //     width: 640,
+          //     slidesPerView: 1,
+          //   },
+            // 850: {
+            //   width: 850,
+            //   slidesPerView: 0,
+            // },
+          // }}
           className="mySwiper"
           style={{
             marginTop: 50,

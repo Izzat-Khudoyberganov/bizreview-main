@@ -141,6 +141,9 @@ button {
 .accordion-item.active .accordion-item-btn::after {
   transform: rotate(-180deg);
 }
+.accordion-item.hiden .accordion-item-btn::after {
+  transform: rotate(180deg);
+}
 
 .accordion-item-container {
   transition: height 0.2s ease-in-out;
