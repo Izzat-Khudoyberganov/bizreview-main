@@ -6,8 +6,11 @@ export const FooterWraper = styled.section`
   padding: 100px 0;
 
   @media (max-width: 850px) {
-    margin-top: 0;
-    padding: 0 0 50px;
+   padding: 50px 0 100px;
+  }
+
+  @media (max-width: 500px) {
+   padding: 25px 0 100px;
   }
 `;
 
@@ -17,10 +20,7 @@ export const FooterRows = styled.div`
   justify-content: space-between;
 
   @media (max-width: 850px) {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 0;
+   display: none;
   }
 `;
 export const ColumnTitle = styled.p`
@@ -36,18 +36,7 @@ export const FooterColumns = styled.div`
   align-items: flex-start;
   justify-content: start;
   gap: 15px;
-
-  @media (max-width: 850px) {
-    width: 100%;
-    margin-top: 20px;
-    align-items: center;
-    justify-content: center;
-  }
 `;
 export const Info = styled.p`
   width: 250px;
-
-  @media(max-width: 850px) {
-    text-align: center;
-  }
 `;

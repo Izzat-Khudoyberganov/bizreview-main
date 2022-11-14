@@ -3,7 +3,6 @@ import { data } from "./data";
 import Image from "next/image";
 import img from "../../img/logo.png";
 import { NavbarLinks } from "../NavbarLinks";
-import { ButtonPrimary } from "../Button";
 import { Nav, NavbarNav, NavbarAction, SignUpBtn, LoginBtn } from "./style";
 import Link from "next/link";
 import { useRouter } from "next/router";

@@ -32,5 +32,6 @@ export const SearchIcon = styled(Search)`
 
   @media (max-width: 500px) {
     display: none;
+    flex-shrink: 0;
   }
 `

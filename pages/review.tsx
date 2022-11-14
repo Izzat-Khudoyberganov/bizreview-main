@@ -1,10 +1,14 @@
-import React from "react"
-import Container from "../Layout/Container"
+import React, { FC } from "react";
+import Review from "../components/Review";
+import Container from "../Layout/Container";
 
-type Props = {}
 
-const review = (props: Props) => {
-  return <Container>review</Container>
-}
+const review:FC = () => {
+  return (
+    <Container>
+      <Review />
+    </Container>
+  );
+};
 
-export default review
+export default review;

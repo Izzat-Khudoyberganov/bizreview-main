@@ -12,6 +12,7 @@ import {
   Info,
 } from "./style"
 import { Company, GetListed, Useful } from "./data"
+import MobileFooter from "./MobileFooter"
 
 export const Footer: FC = () => {
   return (
@@ -48,6 +49,7 @@ export const Footer: FC = () => {
             ))}
           </FooterColumns>
         </FooterRows>
+        <MobileFooter/>
       </Container>
     </FooterWraper>
   )

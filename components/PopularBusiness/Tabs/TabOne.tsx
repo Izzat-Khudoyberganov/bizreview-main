@@ -19,7 +19,6 @@ const TabsContainer = styled.div`
 `
 const TabCard = styled.div`
   width: 255px;
-  /* height: 305px; */
   box-shadow: rgba(219, 203, 203, 0.24) 0px 3px 8px;
   display: flex;
   flex-direction: column;
@@ -28,6 +27,13 @@ const TabCard = styled.div`
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     cursor: pointer;
+  }
+
+  @media(max-width: 768px) {
+    &:hover {
+      box-shadow: none;
+      cursor: unset;
+    }
   }
 
 `
