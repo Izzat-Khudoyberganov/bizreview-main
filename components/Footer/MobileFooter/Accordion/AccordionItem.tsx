@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { getRefValue } from '../../../../hooks/accordion';
 import { AccordionData } from './types';
 
 function AccordionItem({
@@ -15,7 +16,7 @@ function AccordionItem({
 
   useEffect(() => {
     if (isOpen) {
-      const contentEl = contentRef.current as HTMLDivElement;
+      const contentEl = getRefValue(contentRef);
 
       setHeight(contentEl.scrollHeight);
     } else {

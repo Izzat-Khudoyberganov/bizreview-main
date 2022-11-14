@@ -1,8 +1,8 @@
-import React, { FC } from "react"
-import Image from "next/image"
-import logo from "../../img/logo.png"
-import Container from "../../Layout/Container"
-import { ButtonSecondary } from "../Button"
+import React, { FC } from "react";
+import Image from "next/image";
+import logo from "../../img/logo.png";
+import Container from "../../Layout/Container";
+import { ButtonSecondary } from "../Button";
 import {
   ColumnTitle,
   FooterColumns,
@@ -10,9 +10,10 @@ import {
   FooterRows,
   FooterWraper,
   Info,
-} from "./style"
-import { Company, GetListed, Useful } from "./data"
-import MobileFooter from "./MobileFooter"
+} from "./style";
+import { Company, GetListed, Useful } from "./data";
+import MobileFooter from "./MobileFooter";
+import Link from "next/link";
 
 export const Footer: FC = () => {
   return (
@@ -20,7 +21,7 @@ export const Footer: FC = () => {
       <Container>
         <FooterRows>
           <FooterColumns>
-            <Image src={logo} width={180} height={70} alt='img' />
+            <Image src={logo} width={180} height={70} alt="img" />
             <Info>Bizreviews has acollection of latest 25, 000+ business</Info>
             <ButtonSecondary>Join For Free</ButtonSecondary>
           </FooterColumns>
@@ -43,14 +44,14 @@ export const Footer: FC = () => {
           <FooterColumns>
             <ColumnTitle>Useful</ColumnTitle>
             {Useful.map((el: { link: string; title: string }) => (
-              <FooterLink key={el.title} href={el.link}>
-                {el.title}
-              </FooterLink>
+              <Link key={el.title} href={el.link}>
+                <FooterLink>{el.title}</FooterLink>
+              </Link>
             ))}
           </FooterColumns>
         </FooterRows>
-        <MobileFooter/>
+        <MobileFooter />
       </Container>
     </FooterWraper>
-  )
-}
+  );
+};

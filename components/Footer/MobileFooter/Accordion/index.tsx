@@ -5,7 +5,7 @@ import AccordionItem from './AccordionItem';
 function Accordion({ items }: { items: Array<AccordionData> }) {
   const [currentIdx, setCurrentIdx] = useState(-1);
   const btnOnClick = (idx: number) => {
-    setCurrentIdx(idx);
+    setCurrentIdx((currentValue) => (currentValue !== idx ? idx : -1));
   };
 
   return (

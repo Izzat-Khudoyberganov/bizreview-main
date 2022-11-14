@@ -27,8 +27,13 @@ export const ColumnTitle = styled.p`
   font-size: 1.2rem;
   font-weight: 500;
 `;
-export const FooterLink = styled(Link)`
-  color: #b5bcca;
+export const FooterLink = styled.a`
+   color: #000;
+   transition: 0.3s;
+
+   &:hover {
+    color: #888;
+   }
 `;
 export const FooterColumns = styled.div`
   display: flex;
