@@ -21,10 +21,10 @@ const Review: FC = () => {
       </ReviewWraper>
       <ReviewIllustrationTitle>Visited one of these places recently?</ReviewIllustrationTitle>
       <ReviewIllustration>
-        <Image src={like} width="200" height="200" />
+        <Image src={like} width={200} height={200} />
         <p>
-          We're out of suggestions for you right now. Keep on using Yelp and
-          we'll have some more for you soon.
+          We`re out of suggestions for you right now. Keep on using Yelp and
+          we`ll have some more for you soon.
         </p>
       </ReviewIllustration>
     </>
