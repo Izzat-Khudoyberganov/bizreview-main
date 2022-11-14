@@ -45,7 +45,7 @@ export const Footer: FC = () => {
             <ColumnTitle>Useful</ColumnTitle>
             {Useful.map((el: { link: string; title: string }) => (
               <Link key={el.title} href={el.link}>
-                <FooterLink>{el.title}</FooterLink>
+                <FooterLink>{ el.title}</FooterLink>
               </Link>
             ))}
           </FooterColumns>
