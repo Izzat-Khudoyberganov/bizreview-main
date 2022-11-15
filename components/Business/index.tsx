@@ -18,6 +18,8 @@ import {
   ManageBtn,
   UnlockPageText,
 } from "./style";
+import Solutions from "./Solutions";
+import Market from "./Market";
 
 const Business = () => {
   return (
@@ -43,8 +45,10 @@ const Business = () => {
         <Recources />
         <BusinessPage />
         <Ads />
-        <Connect/>
+        <Connect />
       </BusinessPageWraper>
+      <Solutions />
+      <Market/>
     </>
   );
 };
