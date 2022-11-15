@@ -28,24 +28,24 @@ export const Footer: FC = () => {
           <FooterColumns>
             <ColumnTitle>Company</ColumnTitle>
             {Company.map((el: { link: string; title: string }) => (
-              <FooterLink href={el.link} key={el.title}>
-                {el.title}
-              </FooterLink>
+              <Link href={el.link} key={el.title}>
+                <FooterLink> {el.title}</FooterLink>
+              </Link>
             ))}
           </FooterColumns>
           <FooterColumns>
             <ColumnTitle>Get Listed</ColumnTitle>
             {GetListed.map((el: { link: string; title: string }) => (
-              <FooterLink href={el.link} key={el.title}>
-                {el.title}
-              </FooterLink>
+              <Link href={el.link} key={el.title}>
+                <FooterLink> {el.title}</FooterLink>
+              </Link>
             ))}
           </FooterColumns>
           <FooterColumns>
             <ColumnTitle>Useful</ColumnTitle>
             {Useful.map((el: { link: string; title: string }) => (
               <Link key={el.title} href={el.link}>
-                <FooterLink>{ el.title}</FooterLink>
+                <FooterLink>{el.title}</FooterLink>
               </Link>
             ))}
           </FooterColumns>

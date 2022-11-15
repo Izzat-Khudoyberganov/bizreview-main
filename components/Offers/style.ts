@@ -35,7 +35,7 @@ export const SwiperItemCards = styled(SwiperSlide)<Props>`
   background-size: cover;
   width: 250px !important;
   display: inline-block;
-  height: 165px;
+  /* height: 165px; */
   margin: 0 auto;
   padding: 20px;
   transition: 0.4s ease;

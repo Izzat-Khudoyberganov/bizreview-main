@@ -54,6 +54,7 @@ export const WrapperLink = styled.p`
   font-size: 1rem;
   font-weight: 500;
   display: block;
-  padding: 20px;
+  padding: 10px 20px;
   text-align: center;
+  cursor: pointer;
 `

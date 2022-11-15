@@ -35,23 +35,29 @@ export const SwiperNavigation = styled.div`
 export const SwiperCards = styled(SwiperSlide)`
   margin: 10px;
   width: 250px;
-  height: 220px;
+  /* height: 220px; */
   padding: 35px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
   margin-bottom: 120px;
-  align-items: flex-start;
   background-color: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: all 0.4s ease;
+
   &:hover {
     background-color: #ffd600;
     cursor: pointer;
   }
 `
-
+export const SwiperCardTitle = styled.h5`
+  width: 200px;
+`
+export const SwiperCardSubtitle = styled.p`
+  width: 200px;
+`
 export const ButtonNext = styled.button`
   width: 50px;
   height: 50px;

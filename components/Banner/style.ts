@@ -12,9 +12,9 @@ export const BannerWraper = styled.section<Props>`
   max-width: 1120px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 100px 50px;
   border: 1px solid white;
-  height: 500px;
+  /* height: 500px; */
 
   @media (max-width: 768px) {
     display: flex;

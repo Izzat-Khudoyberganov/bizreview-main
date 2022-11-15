@@ -29,6 +29,7 @@ export const ColumnTitle = styled.p`
 `;
 export const FooterLink = styled.a`
    color: #000;
+   cursor: pointer;
    transition: 0.3s;
 
    &:hover {

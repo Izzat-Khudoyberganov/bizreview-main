@@ -13,6 +13,7 @@ import {
   PopularServicesWraper,
   ServiceWraper,
   SwiperCards,
+  SwiperCardTitle,
   SwiperNavigation,
 } from "./style"
 
@@ -86,7 +87,7 @@ const PopularServices: FC = () => {
               layout='intrinsic'
               height={100}
             />
-            <h4>{el.title}</h4>
+            <SwiperCardTitle>{el.title}</SwiperCardTitle>
             <p>{el.subtitle}</p>
           </SwiperCards>
         ))}

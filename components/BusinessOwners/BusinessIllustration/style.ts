@@ -23,7 +23,7 @@ export const Illustration = styled.div<Props>`
 
 export const Review = styled.div`
   width: 275px;
-  height: 100px;
+  /* height: 100px; */
   background-color: #fff;
   color: #000;
   margin-top: 70%;
