@@ -19,6 +19,11 @@ export const GlobalStyles = createGlobalStyle`
     color: #000;
   }
 
+  *::selection {
+    color: #fff;
+    background-color: rgb(43,39,60);
+}
+
 .tabs {
   padding: 15px;
   text-align: center;

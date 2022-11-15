@@ -1,10 +1,8 @@
 import React from "react"
-import Container from "../Layout/Container"
+import Business from "../components/Business"
 
-type Props = {}
-
-const company = (props: Props) => {
-  return <Container>Company</Container>
+const company = () => {
+  return <Business/>
 }
 
 export default company

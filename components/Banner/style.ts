@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import mobile from "../../img/mobile-banner-img.png"
+
 interface Props {
   image: any
   mobile: any
