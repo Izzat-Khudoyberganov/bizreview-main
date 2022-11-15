@@ -6,6 +6,10 @@ export const RecourcesContainer = styled.div`
   width: 100%;
   padding: 48px 32px 104px;
   margin: 0 auto;
+
+  @media (max-width: 500px) {
+    padding: 30px 0 30px;
+  }
 `;
 
 export const RecourcesTitle = styled.h4`
@@ -21,32 +25,44 @@ export const RecourcesTitle = styled.h4`
 `;
 
 export const InfoWraper = styled.div`
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+
+  @media (max-width: 1160px) {
+    flex-direction: column;
     justify-content: center;
-    gap: 20px;
-`
+    align-items: center;
+  }
+`;
 
 export const InfoWraperItems = styled.div`
-    width: 33%;
-    margin-bottom: 48px;
-    padding-left: 32px;
-`
+  width: 33%;
+  margin-bottom: 48px;
+  padding-left: 32px;
+
+  @media (max-width: 1160px) {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
+`;
 
 export const InfoImage = styled(Image)`
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-`
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+`;
 
 export const WraperTitle = styled.h4`
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-align: center;
-`
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+`;
 
 export const WraperText = styled.p`
-    font-size: 14px;
-    text-align: center;
-`
+  font-size: 14px;
+  text-align: center;
+`;

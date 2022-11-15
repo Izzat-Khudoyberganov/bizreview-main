@@ -22,7 +22,7 @@ import {
 const Business = () => {
   return (
     <>
-      <BusinessWraper image={business}>
+      {/* <BusinessWraper image={business}>
         <BusinessContainer>
           <BusinessInfo>
             <Title title="Its free to be on bizreview" />
@@ -38,7 +38,7 @@ const Business = () => {
             <ManageBtn>Manage my free listing</ManageBtn>
           </BusinessInfo>
         </BusinessContainer>
-      </BusinessWraper>
+      </BusinessWraper> */}
       <BusinessPageWraper>
         <Recources />
         <BusinessPage />

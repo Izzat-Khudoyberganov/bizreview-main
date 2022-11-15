@@ -11,6 +11,7 @@ import {
   ItemsText,
   LearnMoreLink,
   MainWraper,
+  TrueIcon,
   WraperItems,
 } from "../style";
 import { BusinessPageData } from "../data";
@@ -39,7 +40,7 @@ const BusinessPage = () => {
             </InfoText>
             {BusinessPageData.map((el, i) => (
               <ActionItems key={i}>
-                <Image src={el.icon} width={40} height={40} alt={el.title} />
+                <TrueIcon src={el.icon} width={40} height={40} alt={el.title} />
                 <ItemsText>{el.title}</ItemsText>
               </ActionItems>
             ))}

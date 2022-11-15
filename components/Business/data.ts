@@ -47,7 +47,7 @@ export const ConnectData = [
         icon: trueIcon
     },
     {
-        title: "Post about what’s new, what’s hot and what’s unique about your business",
+        title: "Only pay when interested people click on your ad",
         icon: trueIcon
     },
     {

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface Types {
   image: StaticImageData;
@@ -76,24 +76,41 @@ export const MainWraper = styled.section`
   align-items: flex-start;
   justify-content: center;
   margin-top: 50px;
+
+  @media (max-width: 933px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 export const WraperItems = styled.div`
   flex-basis: 50%;
+
+  @media(max-width: 933px) {
+    width: 75%;
+  }
 `;
 export const ImageSection = styled.div<Types>`
   background-image: url(${(props) => props.image.src});
-  background-position: top center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 500px;
   height: 500px;
+
+  @media(max-width: 933px) {
+    width: 100%;
+  }
 `;
 export const InfoSection = styled.div`
   width: 100%;
   padding: 36px 0 24px 32px;
+
+  @media(max-width: 933px) {
+    padding: 36px 0;
+  }
 `;
 export const HeaderTitle = styled.p`
-text-transform: uppercase;
+  text-transform: uppercase;
   color: rgb(194, 164, 161);
   font-weight: 700;
   font-size: 14px;
@@ -130,3 +147,6 @@ export const LearnMoreLink = styled.a`
     cursor: pointer;
   }
 `;
+export const TrueIcon = styled(Image)`
+  flex-shrink: 0;
+`
