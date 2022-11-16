@@ -5,7 +5,7 @@ import { StartTitle } from "./style";
 
 const title: string =
   "Ready to get started? It’s free, easy, and only takes a few minutes.";
-const Start: FC = () => {
+export const Start: FC = () => {
   return (
     <ListFormWraper>
       <ListFormContainer>
@@ -20,4 +20,3 @@ const Start: FC = () => {
   );
 };
 
-export default Start;
