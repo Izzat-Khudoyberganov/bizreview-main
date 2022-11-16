@@ -2,7 +2,7 @@ import React from "react";
 import { ListForm } from "./ListForm";
 import Start from "./Start";
 import { ListWraper } from "./style";
-import Tabs from "./Tabs";
+import Tabs from "../PopularBusiness/Tabs";
 import YouTube from "./YouTube";
 
 const GetList = () => {
@@ -12,8 +12,8 @@ const GetList = () => {
         <ListForm />
         <YouTube />
         <Start />
+        <Tabs />
       </ListWraper>
-      <Tabs/>
     </>
   );
 };
