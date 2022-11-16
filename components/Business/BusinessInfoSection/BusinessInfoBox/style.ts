@@ -1,35 +1,20 @@
-import styled from "@emotion/styled";
-import Image, { StaticImageData } from "next/image";
-
-interface Types {
-  image: StaticImageData;
-}
-
-export const BusinessWraper = styled.section<Types>`
-  background-image: url(${(props) => props.image.src});
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding: 150px 100px;
-`;
-export const BusinessContainer = styled.div`
-  max-width: 1120px;
-  width: 100%;
-  margin: 0 auto;
-`;
+import styled from "styled-components";
 
 export const BusinessInfo = styled.div`
   max-width: 540px;
   width: 100%;
-  padding: 58px 34px 42px;
+  padding: 34px 42px;
   background-color: #fff;
   border-radius: 5px;
+  display: none;
 
   @media(max-width: 1180px){
-    
+    /* position: absolute; */
+    display: block;
+    margin-inline: auto;
   }
 `;
+
 export const ActionList = styled.div`
   width: 100%;
   display: flex;
@@ -39,11 +24,11 @@ export const ActionList = styled.div`
 `;
 
 export const UnlockPageText = styled.p`
-  font: 600 100%/1.5 Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #2b273c;
   margin-top: 20px;
   font-size: 1.5rem;
 `;
+
 export const ManageBtn = styled.button`
   font-weight: 500;
   background-color: #0d182e;

@@ -16,9 +16,9 @@ import {
   WraperItems,
 } from "../style";
 
-export const Connect:FC = () => {
+export const Connect: FC = () => {
   return (
-    <>
+    <React.Fragment>
       <MainWraper>
         <WraperItems>
           <ImageSection image={connect} />
@@ -45,7 +45,6 @@ export const Connect:FC = () => {
           </InfoSection>
         </WraperItems>
       </MainWraper>
-    </>
+    </React.Fragment>
   );
 };
-

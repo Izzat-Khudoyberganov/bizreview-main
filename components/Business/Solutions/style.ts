@@ -5,6 +5,10 @@ export const SolutionsWraper = styled.section`
   width: 100%;
   background-color: #f5fafd;
   padding: 100px 0;
+
+  @media(max-width: 620px) {
+    padding: 50px 0;
+  }
 `;
 
 export const GridContainer = styled.div`
