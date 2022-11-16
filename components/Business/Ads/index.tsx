@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import ads from "../../../img/ads.jpg";
 import {
   ActionItems,
@@ -17,7 +17,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-const Ads = () => {
+export const Ads:FC = () => {
   return (
     <>
       <MainWraper>
@@ -50,4 +50,3 @@ const Ads = () => {
   );
 };
 
-export default Ads;

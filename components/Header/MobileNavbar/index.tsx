@@ -1,8 +1,8 @@
-import React, { FC } from "react"
-import Link from "next/link"
-import { useRouter } from "next/router"
-import { data } from "../data"
-import { en, ru } from "../../../utils/translations"
+import React, { FC } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { data } from "../data";
+import { en, ru } from "../../../utils/translations";
 import {
   LoginIcon,
   MobileNavButton,
@@ -10,13 +10,12 @@ import {
   MobileNavWraper,
   NavbarLinkIcons,
   UserIcon,
-} from "./style"
-import { Footer } from "../../Footer"
+} from "./style";
 
-const MobileNavbar: FC = () => {
-  let router = useRouter()
-  const { locale } = router
-  const t = locale === "en" ? en : ru
+export const MobileNavbar: FC = () => {
+  let router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : ru;
 
   return (
     <MobileNavWraper>
@@ -43,7 +42,5 @@ const MobileNavbar: FC = () => {
         )
       )}
     </MobileNavWraper>
-  )
-}
-
-export default MobileNavbar
+  );
+};

@@ -1,5 +1,7 @@
-import React from "react";
+import React, { FC } from "react";
+import Link from "next/link";
 import connect from "../../../img/connect.jpg";
+import { ConnectData } from "../data";
 import {
   ActionItems,
   HeaderTitle,
@@ -13,11 +15,8 @@ import {
   TrueIcon,
   WraperItems,
 } from "../style";
-import { AdsData, ConnectData } from "../data";
-import Image from "next/image";
-import Link from "next/link";
 
-const Connect = () => {
+export const Connect:FC = () => {
   return (
     <>
       <MainWraper>
@@ -50,4 +49,3 @@ const Connect = () => {
   );
 };
 
-export default Connect;

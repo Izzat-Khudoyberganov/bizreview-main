@@ -13,14 +13,12 @@ import {
   AlternativeElement,
 } from "./style"
 
-type Props = {}
-
-const LoginPage: FC = (props: Props) => {
+export const LoginPage: FC = () => {
   return (
       <LoginWraper>
         <LoginTitle>Login to <span>bizreview</span></LoginTitle>
         <SignUpTitle>
-          New to Yelp?
+          New to bizreview?
           <span>Sign Up</span>
         </SignUpTitle>
         <PrivacyText>
@@ -40,5 +38,3 @@ const LoginPage: FC = (props: Props) => {
       </LoginWraper>
   )
 }
-
-export default LoginPage

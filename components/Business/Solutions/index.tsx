@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import React, { FC } from 'react'
-import BusinessPageTitle from '../BusinessPageTitle'
+import Link from 'next/link'
+import {BusinessPageTitle} from '../BusinessPageTitle'
 import { GridElements } from '../data'
 import { BusinessPageWraper, LearnMoreLink } from '../style'
 import { GridContainer, GridItems, ItemImage, ItemInfo, ItemInfoText, ItemInfoTitle, LearnMore, SolutionsWraper } from './style'

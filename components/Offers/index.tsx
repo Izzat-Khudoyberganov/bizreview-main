@@ -3,9 +3,8 @@ import { useRouter } from "next/router";
 import { Swiper } from "swiper/react";
 import { FreeMode, Navigation, Pagination } from "swiper";
 import { StaticImageData } from "next/image";
-import { useSwiper } from "swiper/react";
 import { en, ru } from "../../utils/translations";
-import { ButtonNext, ButtonPrev, NextIcon, SwiperNavigation } from "./style";
+import { ButtonNext, ButtonPrev, SwiperNavigation } from "./style";
 import { slides } from "./data";
 import Title from "../Title";
 import {
@@ -63,16 +62,20 @@ const Offers: FC = () => {
             prevEl,
             nextEl,
           }}
-          // breakpoints={{
-          //   640: {
-          //     width: 640,
-          //     slidesPerView: 1,
-          //   },
-            // 850: {
-            //   width: 850,
-            //   slidesPerView: 0,
-            // },
-          // }}
+          breakpoints={{
+            320: {
+              width: 320,
+              slidesPerView: 1,
+            },
+            640: {
+              width: 640,
+              slidesPerView: 2,
+            },
+            768: {
+              width: 768,
+              slidesPerView: 3,
+            },
+          }}
           className="mySwiper"
           style={{
             marginTop: 50,

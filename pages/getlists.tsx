@@ -1,5 +1,5 @@
 import React from "react"
-import GetList from "../components/GetList"
+import {GetList} from "../components/GetList"
 
 type Props = {}
 

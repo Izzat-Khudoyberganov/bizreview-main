@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import { ListForm } from "./ListForm";
 import {Start} from "./Start";
 import { ListWraper } from "./style";
 import Tabs from "../PopularBusiness/Tabs";
 import YouTube from "./YouTube";
 
-const GetList = () => {
+export const GetList:FC = () => {
   return (
     <>
       <ListWraper>
@@ -18,4 +18,4 @@ const GetList = () => {
   );
 };
 
-export default GetList;
+

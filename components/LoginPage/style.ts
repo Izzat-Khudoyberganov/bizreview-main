@@ -1,6 +1,4 @@
 import styled from "styled-components"
-import { FacebookCircle } from "@styled-icons/boxicons-logos"
-
 
 export const LoginWraper = styled.div`
   display: flex;

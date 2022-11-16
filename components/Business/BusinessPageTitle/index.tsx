@@ -17,8 +17,8 @@ const Title = styled.h4`
   text-align: center;
 `;
 
-const BusinessPageTitle:FC<Props> = ({ title }) => {
+export const BusinessPageTitle:FC<Props> = ({ title }) => {
   return <Title>{title}</Title>;
 };
 
-export default BusinessPageTitle;
+

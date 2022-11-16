@@ -1,8 +1,11 @@
 import React, { FC } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import logo from "../../img/logo.png";
 import Container from "../../Layout/Container";
+import {MobileFooter} from "./MobileFooter";
 import { ButtonSecondary } from "../Button";
+import { Company, GetListed, Useful } from "./data";
 import {
   ColumnTitle,
   FooterColumns,
@@ -11,9 +14,6 @@ import {
   FooterWraper,
   Info,
 } from "./style";
-import { Company, GetListed, Useful } from "./data";
-import MobileFooter from "./MobileFooter";
-import Link from "next/link";
 
 export const Footer: FC = () => {
   return (

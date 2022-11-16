@@ -16,6 +16,10 @@ const MainTitle = styled.h3`
     font-size: 2.5rem;
     margin-bottom: 0;
   }
+
+  @media(max-width: 620px) {
+    font-size: 1.8rem;
+  }
 `
 const Title: FC<Props> = ({ title }) => {
   return <MainTitle>{title}</MainTitle>

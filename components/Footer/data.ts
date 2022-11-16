@@ -1,4 +1,4 @@
-import logo from "../../img/logo.png"
+import logo from "../../img/logo.png";
 
 export const Company = [
   {
@@ -25,7 +25,7 @@ export const Company = [
     title: "Supported Sources",
     link: "/",
   },
-]
+];
 
 export const GetListed = [
   {
@@ -48,7 +48,7 @@ export const GetListed = [
     title: "Compare Plans",
     link: "/",
   },
-]
+];
 
 export const Useful = [
   {
@@ -75,4 +75,4 @@ export const Useful = [
     title: "Privacy Policy",
     link: "/",
   },
-]
+];

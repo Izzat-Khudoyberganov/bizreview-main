@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import Link from 'next/link'
-import BusinessPageTitle from '../BusinessPageTitle'
+import {BusinessPageTitle} from '../BusinessPageTitle'
 import { MarketData } from '../data'
 import { LearnMoreLink, MainWraper } from '../style'
 import { MarketWraper, ProImage, ProTitle, ProWraper, ProWraperItems } from './style'

@@ -4,12 +4,11 @@ import {
   InfoWraper,
   InfoWraperItems,
   RecourcesContainer,
-  RecourcesTitle,
   WraperText,
   WraperTitle,
 } from "./style";
 import { RecourcesData } from "./data";
-import BusinessPageTitle from "../BusinessPageTitle";
+import {BusinessPageTitle} from "../BusinessPageTitle";
 
 const title =
   "Bizreview for Business has resources to help you plan, start, grow, and advertise your small business";

@@ -16,6 +16,7 @@ const feedback: string =
   " “I didn’t have a lot of time for marketing and Yelp was the easy way to do it.”";
 const auth: string = "Erika Seress, The Pod Photography";
 const address:string = "Culver City, CA"
+
 const YouTube: FC = () => {
   return (
     <YouTubeWraper>

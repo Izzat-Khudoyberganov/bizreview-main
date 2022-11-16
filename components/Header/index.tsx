@@ -1,12 +1,12 @@
 import { FC } from "react";
-import { data } from "./data";
 import Image from "next/image";
-import img from "../../img/logo.png";
-import { NavbarLinks } from "../NavbarLinks";
-import { Nav, NavbarNav, NavbarAction, SignUpBtn, LoginBtn } from "./style";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { en, ru } from "../../utils/translations";
+import { data } from "./data";
+import img from "../../img/logo.png";
+import { NavbarLinks } from "../NavbarLinks";
+import { Nav, NavbarNav, NavbarAction, SignUpBtn, LoginBtn } from "./style";
 
 type Props = {
   title?: string;
@@ -27,6 +27,7 @@ export const Header: FC<Props> = ({ title }) => {
         break;
     }
   };
+
   return (
     <Nav>
       <NavbarNav>

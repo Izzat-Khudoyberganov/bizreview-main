@@ -12,18 +12,6 @@ export const RecourcesContainer = styled.div`
   }
 `;
 
-export const RecourcesTitle = styled.h4`
-  max-width: 500px;
-  width: 100%;
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: 700;
-  color: #2b273c;
-  margin-bottom: 16px;
-  margin-inline: auto;
-  text-align: center;
-`;
-
 export const InfoWraper = styled.div`
   display: flex;
   align-items: flex-start;

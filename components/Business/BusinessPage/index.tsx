@@ -1,5 +1,5 @@
 import React from "react";
-import BusinessPageTitle from "../BusinessPageTitle";
+import {BusinessPageTitle} from "../BusinessPageTitle";
 import mobilebiz from "../../../img/mobilebiz.jpg";
 import {
   ActionItems,
@@ -21,7 +21,7 @@ import Link from "next/link";
 const title =
   "bizreview makes it easy to connect with new customers and grow your business";
 
-const BusinessPage = () => {
+export const BusinessPage = () => {
   return (
     <>
       <BusinessPageTitle title={title} />
@@ -54,4 +54,3 @@ const BusinessPage = () => {
   );
 };
 
-export default BusinessPage;
