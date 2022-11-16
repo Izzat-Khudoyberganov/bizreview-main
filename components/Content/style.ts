@@ -23,7 +23,7 @@ export const ContentWraper = styled.div`
 `
 
 export const ContentTitle = styled.h1`
-  max-width: 600px;
+  max-width: 630px;
   width: 100%;
   font-size: 3rem;
   font-weight: 600;

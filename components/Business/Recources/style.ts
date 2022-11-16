@@ -52,7 +52,7 @@ export const InfoWraperItems = styled.div`
 export const InfoImage = styled(Image)`
   max-width: 400px;
   width: 100%;
-  height: auto;
+  object-fit: contain;
 `;
 
 export const WraperTitle = styled.h4`

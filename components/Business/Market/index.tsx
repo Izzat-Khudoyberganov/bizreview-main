@@ -1,14 +1,11 @@
-import Image from 'next/image'
+import React, { FC } from 'react'
 import Link from 'next/link'
-import React from 'react'
 import BusinessPageTitle from '../BusinessPageTitle'
 import { MarketData } from '../data'
 import { LearnMoreLink, MainWraper } from '../style'
 import { MarketWraper, ProImage, ProTitle, ProWraper, ProWraperItems } from './style'
 
-type Props = {}
-
-const Market = (props: Props) => {
+export const Market:FC = () => {
   return (
     <MainWraper>
         <MarketWraper>
@@ -28,5 +25,3 @@ const Market = (props: Props) => {
     </MainWraper>
   )
 }
-
-export default Market

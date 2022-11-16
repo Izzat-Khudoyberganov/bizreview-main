@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import {
   InfoImage,
   InfoWraper,
@@ -13,7 +13,8 @@ import BusinessPageTitle from "../BusinessPageTitle";
 
 const title =
   "Bizreview for Business has resources to help you plan, start, grow, and advertise your small business";
-const Recources = () => {
+
+export const Recources:FC = () => {
   return (
     <RecourcesContainer>
       <BusinessPageTitle title={title} />
@@ -29,5 +30,3 @@ const Recources = () => {
     </RecourcesContainer>
   );
 };
-
-export default Recources;

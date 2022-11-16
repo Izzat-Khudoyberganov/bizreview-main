@@ -33,11 +33,11 @@ export const GridItems = styled.div`
 `;
 export const ItemImage = styled(Image)`
   flex-shrink: 0;
-  flex-shrink: 0;
 `;
 
 export const ItemInfo = styled.div`
   display: block;
+  flex-shrink: 2;
 `;
 export const ItemInfoTitle = styled.h4`
   font-size: 1.2rem;

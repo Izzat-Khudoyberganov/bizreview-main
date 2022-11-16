@@ -1,13 +1,12 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { FC } from 'react'
 import BusinessPageTitle from '../BusinessPageTitle'
 import { GridElements } from '../data'
 import { BusinessPageWraper, LearnMoreLink } from '../style'
 import { GridContainer, GridItems, ItemImage, ItemInfo, ItemInfoText, ItemInfoTitle, LearnMore, SolutionsWraper } from './style'
 
-type Props = {}
 
-const Solutions = (props: Props) => {
+export const Solutions:FC = () => {
   return (
     <SolutionsWraper>
         <BusinessPageWraper>
@@ -30,5 +29,3 @@ const Solutions = (props: Props) => {
     </SolutionsWraper>
   )
 }
-
-export default Solutions
