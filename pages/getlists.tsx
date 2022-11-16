@@ -1,10 +1,10 @@
 import React from "react"
-import Container from "../Layout/Container"
+import GetList from "../components/GetList"
 
 type Props = {}
 
 const getlists = (props: Props) => {
-  return <Container>getlists</Container>
+  return <GetList />
 }
 
 export default getlists
