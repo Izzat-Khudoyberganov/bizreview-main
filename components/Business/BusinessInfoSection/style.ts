@@ -17,6 +17,11 @@ export const BusinessWraper = styled.section<Types>`
     height: 500px;
     padding: 0;
   }
+
+  @media (max-width: 620px) {
+    height: 400px;
+    padding: 0;
+  }
 `;
 
 export const BusinessContainer = styled.div`

@@ -7,8 +7,12 @@ export const RecourcesContainer = styled.div`
   padding: 48px 32px 104px;
   margin: 0 auto;
 
+  @media(max-width: 1180px) {
+    padding-top: 0;
+  }
+
   @media (max-width: 500px) {
-    padding: 30px 0 30px;
+    padding: 0px 0 30px;
   }
 `;
 

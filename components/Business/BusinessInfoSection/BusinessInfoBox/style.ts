@@ -11,13 +11,15 @@ export const BusinessInfo = styled.div`
   @media (max-width: 1180px) {
     display: block;
     margin-inline: auto;
-    transform: translateY(-100px);
+    transform: translateY(-60px);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding-bottom: 34px;
   }
 
   @media (max-width: 620px) {
     padding: 20px;
+    transform: translateY(-70px);
   }
 `;
 
@@ -28,7 +30,7 @@ export const ActionList = styled.div`
   align-items: flex-start;
   gap: 10px;
 
-  @media(max-width: 620px) {
+  @media (max-width: 620px) {
     padding: 15px 0;
   }
 `;
@@ -38,7 +40,7 @@ export const UnlockPageText = styled.p`
   margin-top: 20px;
   font-size: 1.5rem;
 
-  @media(max-width: 620px) {
+  @media (max-width: 620px) {
     margin-top: 0;
   }
 `;
