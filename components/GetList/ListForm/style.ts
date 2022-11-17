@@ -16,6 +16,8 @@ export const ListFormInput = styled.input`
   width: 100%;
   padding: 8px;
   color: rgb(136, 125, 134);
+  border: 1px solid #555;
+  border-radius: 2px;
   background-color: transparent;
 `;
 
