@@ -33,8 +33,7 @@ export const EmailFormInput = styled.input`
   width: 70%;
   height: 100%;
   padding: 40px;
-  border: 1px solid #444;
-  border-radius: 2px;
+  border: none;
   font-size: 1rem;
   background-color: transparent;
 

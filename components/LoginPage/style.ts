@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const LoginWraper = styled.div`
   display: flex;
@@ -13,17 +13,22 @@ export const LoginWraper = styled.div`
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
-`
+
+  @media(max-width: 768px) {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+`;
 
 export const LoginTitle = styled.h4`
- color: red;
+  color: red;
   font-size: 1.5rem;
   text-align: center;
 
   & > span {
     color: #000;
   }
-`
+`;
 
 export const SignUpTitle = styled.span`
   font-size: 1.2rem;
@@ -31,12 +36,12 @@ export const SignUpTitle = styled.span`
     color: red;
     margin-left: 5px;
   }
-`
+`;
 export const PrivacyText = styled.p`
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
-`
+`;
 
 export const AlternativeElement = styled.h4`
   font-size: 1rem;
@@ -67,11 +72,11 @@ export const AlternativeElement = styled.h4`
 `;
 
 export const LoginForm = styled.form`
-  width: 300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
-`
+`;
 
 export const EmailInput = styled.input`
   display: block;
@@ -80,7 +85,7 @@ export const EmailInput = styled.input`
   border: 1px solid #444;
   border-radius: 2px;
   background-color: transparent;
-`
+`;
 
 export const PasswordInput = styled.input`
   display: block;
@@ -89,9 +94,10 @@ export const PasswordInput = styled.input`
   border: 1px solid #444;
   border-radius: 2px;
   background-color: transparent;
-`
+`;
 
 export const LoginBtn = styled.button`
+max-width: 320px;
   width: 100%;
   height: 40px;
   background-color: red;
@@ -99,8 +105,21 @@ export const LoginBtn = styled.button`
   border: none;
   border-radius: 2px;
   padding: 8px;
-`
+`;
 
-export const Link = styled.p`
+export const ForgetPasswordLink = styled.a`
   margin-left: auto;
-`
+  color: #0d182e;
+  transition: 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+`;
+
+export const SignUpRow = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 5px;
+`;

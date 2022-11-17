@@ -13,12 +13,12 @@ export const BannerWraper = styled.section<Props>`
   width: 100%;
   margin: 0 auto;
   padding: 100px 50px;
-  height: 130%;
 
   @media (max-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 130px 50px; 
     background-image: url(${(props) => props.mobile.src});
 
   }

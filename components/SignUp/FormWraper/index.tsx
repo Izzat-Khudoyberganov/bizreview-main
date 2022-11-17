@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { Day, Month, Years } from "./data";
 import {
@@ -54,9 +55,9 @@ const FormWraper = () => {
       <SignUpBtn>Sign Up</SignUpBtn>
       <LinkText>
         Already on bizreviews? {" "} 
-        <LinkToLogin href="/login">
-          <a>Log in</a>
-        </LinkToLogin>
+        <Link href="/login">
+          <LinkToLogin>Log in</LinkToLogin>
+        </Link>
       </LinkText>
     </FormContainer>
   );

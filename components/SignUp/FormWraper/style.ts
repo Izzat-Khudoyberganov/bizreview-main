@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import Link from "next/link";
 
 export const FormContainer = styled.form`
   display: flex;
@@ -82,12 +81,11 @@ export const LinkText = styled.p`
   text-align: right;
   margin-top: 10px;
 `;
-export const LinkToLogin = styled(Link)`
-  & > a {
-    color: red;
+export const LinkToLogin = styled.a`
+  color: #0D182E;
     margin-left: 5px;
     &:hover {
+      cursor: pointer;
       text-decoration: underline;
     }
-  }
 `;

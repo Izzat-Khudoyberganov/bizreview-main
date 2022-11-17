@@ -6,7 +6,6 @@ import {
   ActionItems,
   HeaderTitle,
   ImageSection,
-  InfoSection,
   InfoText,
   InfoTitle,
   ItemsText,
@@ -19,28 +18,30 @@ import {
 export const Connect: FC = () => {
   return (
     <React.Fragment>
+      <MainWraper>
         <WraperItems>
           <ImageSection image={connect} />
         </WraperItems>
         <WraperItems>
-            <HeaderTitle>BIZREVIEW CONNECT</HeaderTitle>
-            <InfoTitle>
-              Bring your business to life with Bizreview Connect
-            </InfoTitle>
-            <InfoText>
-              Bizreview Connect lets you post regular updates so you can help
-              potential customers learn more about your business.
-            </InfoText>
-            {ConnectData.map((el, i) => (
-              <ActionItems key={i}>
-                <TrueIcon src={el.icon} width={40} height={40} alt={el.title} />
-                <ItemsText>{el.title}</ItemsText>
-              </ActionItems>
-            ))}
-            <Link href="/" style={{ marginTop: "24px" }}>
-              <LearnMoreLink>Learn more</LearnMoreLink>
-            </Link>
+          <HeaderTitle>BIZREVIEW CONNECT</HeaderTitle>
+          <InfoTitle>
+            Bring your business to life with Bizreview Connect
+          </InfoTitle>
+          <InfoText>
+            Bizreview Connect lets you post regular updates so you can help
+            potential customers learn more about your business.
+          </InfoText>
+          {ConnectData.map((el, i) => (
+            <ActionItems key={i}>
+              <TrueIcon src={el.icon} width={40} height={40} alt={el.title} />
+              <ItemsText>{el.title}</ItemsText>
+            </ActionItems>
+          ))}
+          <Link href="/" style={{ marginTop: "24px" }}>
+            <LearnMoreLink>Learn more</LearnMoreLink>
+          </Link>
         </WraperItems>
+      </MainWraper>
     </React.Fragment>
   );
 };

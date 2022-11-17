@@ -4,6 +4,7 @@ import { SwiperSlide } from "swiper/react"
 
 export const PopularServicesWraper = styled.div`
   width: 100%;
+  margin: 0 auto;
   background-color: #f5fafd;
   padding: 50px 0;
 
@@ -35,7 +36,6 @@ export const SwiperNavigation = styled.div`
 export const SwiperCards = styled(SwiperSlide)`
   margin: 10px;
   width: 250px;
-  /* height: 220px; */
   padding: 35px;
   display: flex;
   flex-direction: column;

@@ -40,10 +40,10 @@ export const ContentTitle = styled.h1`
     text-align: center;
   }
   @media (max-width: 500px) {
+    text-align: center;
     margin-bottom: 10px;
     font-size: 1.8rem;
-    text-align: left;
-    widht: 100%;
+    width: 100%;
     padding: 0;
   }
 `
@@ -61,9 +61,10 @@ export const ContentSubtitle = styled.p`
   }
 
   @media (max-width: 500px) {
-    margin-left: 0;
-    text-align: left;
+    text-align: center;
     width: 100%;
+    margin-bottom: 20px;
+    margin-inline: auto;
   }
 `
 export const ArrowDownIcon = styled(ArrowDown)`

@@ -23,14 +23,13 @@ export const Illustration = styled.div<Props>`
 
 export const Review = styled.div`
   width: 275px;
-  /* height: 100px; */
   background-color: #fff;
   color: #000;
-  margin-top: 70%;
-  margin-left: 120px;
   padding: 35px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px;
   position: absolute;
+  bottom: 20%;
+  left: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,8 +38,8 @@ export const Review = styled.div`
   text-align: center;
 
   @media (max-width: 620px) {
-    margin-top: 100%;
-    margin-left: 100px;
+    bottom: 0px;
+    left: 0px;
   }
 
   @media (max-width: 400px) {
