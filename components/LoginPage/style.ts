@@ -77,12 +77,14 @@ export const EmailInput = styled.input`
   display: block;
   width: 100%;
   padding: 9px;
+  background-color: transparent;
 `
 
 export const PasswordInput = styled.input`
   display: block;
   width: 100%;
   padding: 9px 4px;
+  background-color: transparent;
 `
 
 export const LoginBtn = styled.button`

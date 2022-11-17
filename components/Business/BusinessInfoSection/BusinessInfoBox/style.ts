@@ -8,10 +8,16 @@ export const BusinessInfo = styled.div`
   border-radius: 5px;
   display: none;
 
-  @media(max-width: 1180px){
-    /* position: absolute; */
+  @media (max-width: 1180px) {
     display: block;
     margin-inline: auto;
+    transform: translateY(-100px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  @media (max-width: 620px) {
+    padding: 20px;
   }
 `;
 
@@ -21,12 +27,20 @@ export const ActionList = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+
+  @media(max-width: 620px) {
+    padding: 15px 0;
+  }
 `;
 
 export const UnlockPageText = styled.p`
   color: #2b273c;
   margin-top: 20px;
   font-size: 1.5rem;
+
+  @media(max-width: 620px) {
+    margin-top: 0;
+  }
 `;
 
 export const ManageBtn = styled.button`

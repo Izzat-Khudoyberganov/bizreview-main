@@ -35,6 +35,7 @@ export const EmailFormInput = styled.input`
   padding: 40px;
   border: none;
   font-size: 1rem;
+  background-color: transparent;
 
   &:focus {
     outline: none;

@@ -16,13 +16,7 @@ export const ListFormInput = styled.input`
   width: 100%;
   padding: 8px;
   color: rgb(136, 125, 134);
-
-  /* &:focus {
-    box-shadow: 0 0 0 2px #0ab3c9;
-    outline: none;
-    offset: none;
-    border: unset;
-  } */
+  background-color: transparent;
 `;
 
 export const SubText = styled.p`

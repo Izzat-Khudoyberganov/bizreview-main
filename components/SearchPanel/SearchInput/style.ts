@@ -20,6 +20,7 @@ export const Input = styled.input`
   height: 50px;
   outline: none;
   border: none;
+  background-color: transparent;
 
   @media (max-width: 933px) {
     width: 300px;

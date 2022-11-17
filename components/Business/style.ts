@@ -23,6 +23,7 @@ export const MainWraper = styled.section`
   @media (max-width: 933px) {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 `;
 export const WraperItems = styled.div`
@@ -30,6 +31,10 @@ export const WraperItems = styled.div`
 
   @media(max-width: 933px) {
     width: 75%;
+  }
+
+  @media(max-width: 620px) {
+    width: 100%;
   }
 `;
 export const ImageSection = styled.div<Types>`
@@ -45,10 +50,11 @@ export const ImageSection = styled.div<Types>`
   }
 `;
 export const InfoSection = styled.div`
-  width: 100%;
+  max-width: 100%;
   padding: 36px 0 24px 32px;
 
   @media(max-width: 933px) {
+    width: 100%;
     padding: 36px 0;
   }
 `;

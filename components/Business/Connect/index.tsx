@@ -19,12 +19,10 @@ import {
 export const Connect: FC = () => {
   return (
     <React.Fragment>
-      <MainWraper>
         <WraperItems>
           <ImageSection image={connect} />
         </WraperItems>
         <WraperItems>
-          <InfoSection>
             <HeaderTitle>BIZREVIEW CONNECT</HeaderTitle>
             <InfoTitle>
               Bring your business to life with Bizreview Connect
@@ -42,9 +40,7 @@ export const Connect: FC = () => {
             <Link href="/" style={{ marginTop: "24px" }}>
               <LearnMoreLink>Learn more</LearnMoreLink>
             </Link>
-          </InfoSection>
         </WraperItems>
-      </MainWraper>
     </React.Fragment>
   );
 };

@@ -21,16 +21,14 @@ export const NameInput = styled.input`
   width: 100%;
   padding: 5px;
   border-radius: 1px solid #999;
+  background-color: transparent;
 `;
 
 export const DefaultInput = styled.input`
   width: 100%;
   padding: 5px;
   border-radius: 1px solid #999;
-
-  /* &:focus {
-    outline: 1px solid blue;
-  } */
+  background-color: transparent;
 
   &::-webkit-inner-spin-button {
     -webkit-appearance: none;

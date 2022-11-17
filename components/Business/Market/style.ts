@@ -7,6 +7,10 @@ export const MarketWraper = styled.section`
   @media(max-width: 933px){
     padding-bottom: 50px;
   }
+
+  @media(max-width: 620px) {
+    padding: 20px 15px;
+  }
 `;
 export const ProWraper = styled.div`
   width: 100%;
