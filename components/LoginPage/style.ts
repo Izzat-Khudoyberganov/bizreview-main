@@ -77,6 +77,8 @@ export const EmailInput = styled.input`
   display: block;
   width: 100%;
   padding: 9px;
+  border: 1px solid #444;
+  border-radius: 2px;
   background-color: transparent;
 `
 
@@ -84,6 +86,8 @@ export const PasswordInput = styled.input`
   display: block;
   width: 100%;
   padding: 9px 4px;
+  border: 1px solid #444;
+  border-radius: 2px;
   background-color: transparent;
 `
 

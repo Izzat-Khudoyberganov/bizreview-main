@@ -20,14 +20,16 @@ export const NameInput = styled.input`
   display: block;
   width: 100%;
   padding: 5px;
-  border-radius: 1px solid #999;
+  border: 1px solid #444;
+  border-radius: 2px;
   background-color: transparent;
 `;
 
 export const DefaultInput = styled.input`
   width: 100%;
   padding: 5px;
-  border-radius: 1px solid #999;
+  border: 1px solid #444;
+  border-radius: 2px;
   background-color: transparent;
 
   &::-webkit-inner-spin-button {
