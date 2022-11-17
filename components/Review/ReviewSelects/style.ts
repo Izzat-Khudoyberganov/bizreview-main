@@ -28,6 +28,7 @@ export const SearchReviewsPanel = styled.div`
 
 export const ReviewSelect = styled.select`
   border: none;
+  background-color: transparent;
   appearance: unset;
   &:focus {
     outline: none;
