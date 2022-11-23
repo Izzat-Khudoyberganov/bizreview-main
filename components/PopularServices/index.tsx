@@ -1,12 +1,12 @@
-import React, { FC, useEffect, useState, useRef } from "react"
-import { Swiper } from "swiper/react"
-import { FreeMode, Pagination, Navigation } from "swiper"
-import Image from "next/image"
-import Container from "../../Layout/Container"
-import { useRouter } from "next/router"
-import { en, ru } from "../../utils/translations"
-import { SwiperItems } from "./data"
-import Title from "../Title"
+import React, { FC, useEffect, useState, useRef } from "react";
+import { Swiper } from "swiper/react";
+import { FreeMode, Pagination, Navigation } from "swiper";
+import Image from "next/image";
+import Container from "../../Layout/Container";
+import { useRouter } from "next/router";
+import { en, ru } from "../../utils/translations";
+import { SwiperItems } from "./data";
+import Title from "../Title";
 import {
   ButtonNext,
   ButtonPrev,
@@ -15,32 +15,33 @@ import {
   SwiperCards,
   SwiperCardTitle,
   SwiperNavigation,
-} from "./style"
+} from "./style";
 
-import "swiper/css"
-import "swiper/css/free-mode"
-import "swiper/css/pagination"
-import "swiper/css/navigation"
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import Link from "next/link";
 
 const PopularServices: FC = () => {
   const useSwiperRef = <T extends HTMLElement>(): [T | null, React.Ref<T>] => {
-    const [wrapper, setWrapper] = useState<T | null>(null)
-    const ref = useRef<T>(null)
+    const [wrapper, setWrapper] = useState<T | null>(null);
+    const ref = useRef<T>(null);
 
     useEffect(() => {
       if (ref.current) {
-        setWrapper(ref.current)
+        setWrapper(ref.current);
       }
-    }, [])
+    }, []);
 
-    return [wrapper, ref]
-  }
+    return [wrapper, ref];
+  };
 
-  let router = useRouter()
-  const { locale } = router
-  const t = locale === "en" ? en : ru
-  const [nextEl, nextElRef] = useSwiperRef<HTMLButtonElement>()
-  const [prevEl, prevElRef] = useSwiperRef<HTMLButtonElement>()
+  let router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : ru;
+  const [nextEl, nextElRef] = useSwiperRef<HTMLButtonElement>();
+  const [prevEl, prevElRef] = useSwiperRef<HTMLButtonElement>();
   return (
     <PopularServicesWraper>
       <Container>
@@ -75,24 +76,26 @@ const PopularServices: FC = () => {
             slidesPerView: 3,
           },
         }}
-        className='mySwiper'
+        className="mySwiper"
         style={{ marginTop: 50, padding: "0 30px" }}
       >
         {SwiperItems.map((el) => (
-          <SwiperCards key={el.id}>
-            <Image
-              src={el.img}
-              alt={el.title}
-              width={100}
-              layout='intrinsic'
-              height={100}
-            />
-            <SwiperCardTitle>{el.title}</SwiperCardTitle>
-            <p>{el.subtitle}</p>
-          </SwiperCards>
+          <Link href={`/product/${el.id}`}>
+            <SwiperCards key={el.id}>
+              <Image
+                src={el.img}
+                alt={el.title}
+                width={100}
+                layout="intrinsic"
+                height={100}
+              />
+              <SwiperCardTitle>{el.title}</SwiperCardTitle>
+              <p>{el.subtitle}</p>
+            </SwiperCards>
+          </Link>
         ))}
       </Swiper>
     </PopularServicesWraper>
-  )
-}
-export default PopularServices
+  );
+};
+export default PopularServices;
