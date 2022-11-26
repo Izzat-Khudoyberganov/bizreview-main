@@ -1,4 +1,6 @@
 import React, { FC, useEffect, useState, useRef } from "react";
+import { GetStaticProps,  InferGetStaticPropsType } from "next";
+import Link from "next/link";
 import { Swiper } from "swiper/react";
 import { FreeMode, Pagination, Navigation } from "swiper";
 import Image from "next/image";
@@ -21,9 +23,27 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Link from "next/link";
 
-const PopularServices: FC = () => {
+type Foo = {
+  categories: any
+}
+
+export const getStaticProps:GetStaticProps = async (context) => {
+  const res = await fetch(
+    "https://635a578638725a1746c39676.mockapi.io/bizreview/api/v1/categories"
+  );
+  console.log(res)
+  const {categories} = await res.json()
+
+  return {
+    props: {
+      data: categories,
+    },
+  };
+}
+
+const PopularServices = ({ data }: InferGetStaticPropsType<typeof getStaticProps>) => {
+
   const useSwiperRef = <T extends HTMLElement>(): [T | null, React.Ref<T>] => {
     const [wrapper, setWrapper] = useState<T | null>(null);
     const ref = useRef<T>(null);
@@ -36,6 +56,8 @@ const PopularServices: FC = () => {
 
     return [wrapper, ref];
   };
+
+  console.log(data);
 
   let router = useRouter();
   const { locale } = router;
@@ -79,6 +101,7 @@ const PopularServices: FC = () => {
         className="mySwiper"
         style={{ marginTop: 50, padding: "0 30px" }}
       >
+
         {SwiperItems.map((el) => (
           <Link href={`/product/${el.id}`}>
             <SwiperCards key={el.id}>
@@ -99,3 +122,28 @@ const PopularServices: FC = () => {
   );
 };
 export default PopularServices;
+
+// import { InferGetStaticPropsType } from 'next'
+
+// type Post = {
+//   author: string
+//   content: string
+// }
+
+// export const getStaticProps = async () => {
+//   const res = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   const posts: Post[] = await res.json()
+
+//   return {
+//     props: {
+//       posts,
+//     },
+//   }
+// }
+
+// function PopularServices({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
+//   console.log(posts)
+//   return <p>{JSON.stringify(posts)}</p>
+// }
+
+// export default PopularServices
