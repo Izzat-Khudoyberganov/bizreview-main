@@ -3,9 +3,6 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 import Container from "../../Layout/Container";
 
-interface IParams extends ParsedUrlQuery {
-  slug: string;
-}
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const res = await fetch(

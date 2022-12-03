@@ -1,5 +1,4 @@
-import React, { FC, useEffect, useState, useRef, ReactNode } from "react";
-import { GetStaticProps, InferGetStaticPropsType } from "next";
+import React, { FC, useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { Swiper } from "swiper/react";
 import { FreeMode, Pagination, Navigation } from "swiper";
@@ -83,9 +82,9 @@ const PopularServices = (props: any) => {
         style={{ marginTop: 50, padding: "0 30px" }}
       >
         {element.map((el: any) => (
-          <Link href={`/product/${el.id}`}>
+          <Link href={`/product/${el.id}`} key={el.id}>
             <a>
-              <SwiperCards key={el.id}>
+              <SwiperCards>
                 <Image
                   src={el.icon}
                   alt={el.title}
