@@ -24,6 +24,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const PopularServices = (props: any) => {
+  const element = Object.values(props);
+  console.log("dataa", element);
+
   const useSwiperRef = <T extends HTMLElement>(): [T | null, React.Ref<T>] => {
     const [wrapper, setWrapper] = useState<T | null>(null);
     const ref = useRef<T>(null);
@@ -42,8 +45,7 @@ const PopularServices = (props: any) => {
   const t = locale === "en" ? en : ru;
   const [nextEl, nextElRef] = useSwiperRef<HTMLButtonElement>();
   const [prevEl, prevElRef] = useSwiperRef<HTMLButtonElement>();
-  const element = Object.values(props);
-  console.log(element, "HIiii");
+
   return (
     <PopularServicesWraper>
       <Container>
@@ -81,10 +83,10 @@ const PopularServices = (props: any) => {
         className="mySwiper"
         style={{ marginTop: 50, padding: "0 30px" }}
       >
-        {element.map((el: any) => (
-          <Link href={`/product/${el.id}`} key={el.id}>
-            <a>
-              <SwiperCards>
+        {element.map((el: any, i: number) => (
+          <SwiperCards key={i}>
+            <Link href={`/product/${el.id}`}>
+              <a>
                 <Image
                   src={el.icon}
                   alt={el.title}
@@ -94,9 +96,9 @@ const PopularServices = (props: any) => {
                 />
                 <SwiperCardTitle>{el.title}</SwiperCardTitle>
                 <p>{el.subtitle}</p>
-              </SwiperCards>
-            </a>
-          </Link>
+              </a>
+            </Link>
+          </SwiperCards>
         ))}
       </Swiper>
     </PopularServicesWraper>

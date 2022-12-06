@@ -23,6 +23,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 };
 
 const Home: NextPage = ({ data }: any) => {
+  console.log(data)
   return (
     <>
       <Head>

@@ -44,8 +44,6 @@ export const UserIcon = styled(User)`
   height: 30px;
 `
 
-console.log(UserIcon)
-
 export const NavbarLinkIcons = styled.div`
   width: 30px;
 `
